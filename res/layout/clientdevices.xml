@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:weightSum="6"
+    >
+    <TextView 
+        android:paddingLeft="10dip"
+        android:paddingTop="2dip"
+        android:text="@string/device_name"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"/>
+    <com.andy.TcpServer.MarqueeTextView
+        android:paddingRight="8dip"
+        android:paddingTop="2dip"
+        android:id="@+id/devicesname"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:layout_weight="3"/>
+    <TextView 
+        android:paddingTop="2dip"
+        android:id="@+id/devicesid"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"/>
+    <TextView 
+        android:paddingLeft="10dip"
+        android:paddingRight="8dip"
+        android:paddingTop="2dip"
+        android:padding="4dip"
+        android:id="@+id/devicesip"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"/>
+</LinearLayout>
